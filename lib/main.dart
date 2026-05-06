@@ -20,6 +20,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        textSelectionTheme: const TextSelectionThemeData(
+          cursorColor: Colors.white,
+          selectionColor: Colors.white30,
+          selectionHandleColor: Colors.white,
+        ),
       ),
       home: const ChatScreen(),
     );
