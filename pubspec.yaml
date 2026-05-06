@@ -44,6 +44,7 @@ dependencies:
   freezed_annotation: ^2.4.4
   json_annotation: ^4.9.0
   flutter_markdown_plus: ^1.0.7
+  lottie: ^3.3.3
 
 dev_dependencies:
   flutter_test:
@@ -78,6 +79,7 @@ flutter:
     - .env
     - assets/app_icon/
     - assets/fonts/inter/
+    - assets/app_splash/
 #    - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 import 'package:flutter_markdown_plus/flutter_markdown_plus.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:practice/controller/ai_controller.dart';
-import 'package:practice/data/models/chat_model.dart';
 
 class ChatScreen extends ConsumerStatefulWidget {
   const ChatScreen({super.key});
@@ -469,12 +468,7 @@ class _InputBar extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
 
     return Container(
-      padding: const EdgeInsets.fromLTRB(
-        16,
-        10,
-        16,
-        20,
-      ),
+      padding: const EdgeInsets.fromLTRB(16,10,16,20,),
       decoration: const BoxDecoration(
         color: Color(0xFF16213E),
         border: Border(
@@ -489,6 +483,7 @@ class _InputBar extends StatelessWidget {
             child: TextField(
               controller: controller,
               enabled: !isLoading,
+              autofocus: true,
               style: textTheme.bodyMedium?.copyWith(
                 color: Colors.white,
               ),
@@ -535,7 +530,7 @@ class _InputBar extends StatelessWidget {
                   : const Icon(
                       Icons.send_rounded,
                       color: Colors.white,
-                      size: 20,
+                      size: 21,
                     ),
             ),
           ),

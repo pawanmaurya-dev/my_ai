@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:practice/screens/chat_screen.dart';
+import 'package:practice/splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
           selectionHandleColor: Colors.white,
         ),
       ),
-      home: const ChatScreen(),
+      home: const SplashScreen(),
     );
   }
 }
